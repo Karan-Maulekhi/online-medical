@@ -827,6 +827,7 @@
             display: flex;
             justify-content: space-between;
             padding-block: 30px;
+            padding-inline: 16px;
         }
     </style>
 
@@ -895,10 +896,6 @@
 
 
     <style>
-        #logo {
-
-        }
-
         #footer-para {
             margin-bottom: 0;
             margin-top: 0;
@@ -956,12 +953,17 @@
             }
         }
 
+        
         @media(max-width:823px) {
             nav {
                 display: none;
             }
         }
-
+        @media(max-width:525px) {
+            h1 {
+              font-size:40px !important;
+            }
+        }
         @media(max-width:768px) {
             #about-container {
                 flex-direction: column;
